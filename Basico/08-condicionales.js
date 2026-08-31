@@ -1,6 +1,6 @@
-//if, else if y else
+// if, else if y else
 
-//if (si)
+// if (si)
 let age = 37
 let id = 'si'
 
@@ -8,14 +8,14 @@ if (age >= 18) {
     console.log(`Tu edad es ${age}, acceso concedido`)
 }
 
-//else
+// else
 if (age == 17) {
     console.log(`Tu edad es ${age}, acceso concedido`)
 } else {
     console.log(`Tu edad es ${age}, acceso denegado`)
 }
 
-//else if
+// else if
 if (age == 38) {
     console.log('Ok')
 } else if (age < 18) {
@@ -43,7 +43,7 @@ console.log(message)
 let esMujer = true
 esMujer ? console.log('Es mujer') : console.log('No es mujer')
 
-//Switch, muchas condiciones que verificar con una sola variable
+// Switch, muchas condiciones que verificar con una sola variable
 let day = 3
 let dayName
 

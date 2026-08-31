@@ -12,10 +12,46 @@ console.log(mySet)
 
 // Metodos comunes
 
-//add y delete
+// add y delete
 
 mySet.add('https://neckhurt.com')
 console.log(mySet)
 
-mySet.delete([5])
+mySet.delete('https://neckhurt.com') //se elimina por su valor, no por el indice porque no existen en los sets
+console.log(mySet)
+
+console.log(mySet.delete('Tomas')) //elimina el elemento y retorna true
+console.log(mySet.delete(4)) //retorna false porque no existe el 4
+
+if (mySet.delete('Tomas')) {
+    console.log('Wow')
+} else {
+    console.log('OnO')
+}
+
+// has
+
+console.log(mySet.has('Rodriguez'))
+console.log(mySet.has('Tomas'))
+
+// size
+
+console.log(mySet.size)
+
+// Convertir un set a array
+console.log('-----------------------')
+
+let myArray = Array.from(mySet)
+console.log(myArray)
+
+// Convertir un array a set
+
+mySet = new Set(myArray)
+console.log(mySet)
+
+// No admite duplicados
+
+mySet.add('Rodriguez')
+mySet.add('Rodriguez')
+mySet.add('Rodriguez')
 console.log(mySet)
