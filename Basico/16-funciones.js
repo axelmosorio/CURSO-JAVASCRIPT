@@ -25,6 +25,12 @@ function miFuncionConParametros(name) {
 miFuncionConParametros('Neckhurt')
 miFuncionConParametros('George')
 
+function funcionConParametrosEntendida(nombre, edad, esMayor = false){ //los parametros pueden ser cualquier tipo de dato, variables vacias
+    console.log(`Su nombre es ${nombre}, su edad es ${edad}. Es mayor?: ${esMayor}`)
+}
+
+funcionConParametrosEntendida('Rodolfo', 17, false)
+
 // Funciones anonimas
 
 //asignar una funcion a una constante/variable
@@ -37,11 +43,17 @@ const miFuncion2 = function(name) {
 
 miFuncion2('Neck')
 
+const miFuncionAnonimaEntendida = function(nombre, edad) {
+    console.log(`Hola ${nombre}, tu edad es: ${edad}`)
+}
+
+miFuncionAnonimaEntendida('Nestor', 44)
+
 // Arrow funciones
 
 console.log('----------------')
 
-const miFuncion3= (name) => {
+const miFuncion3 = (name) => {
     console.log(`Hola, ${name}!`)
 }
 
@@ -50,15 +62,27 @@ const miFuncion4 = (name) => console.log(`Hola, ${name}!`) //sirve para escribir
 miFuncion3('Snickers')
 miFuncion4('Linea')
 
+const miFuncionFlechaEntendida = (nombre, edad) => {
+    console.log(`Bienvenido ${nombre}, tu edad es: ${edad}`)
+}
+
+miFuncionFlechaEntendida('Eduardo', 70)
+
+const miFuncionFlechaEntendida2 = (nombre, edad) => console.log(`Bienvenido ${nombre}, tu edad es: ${edad}`)
+miFuncionFlechaEntendida('Eduardo', 70)
+
 // Parametros
 
-console.log('----------------')
+console.log('55----------------')
 
 function sum(a, b) {
     console.log(a + b)
 }
 
 sum(5, 2)
+
+const functionRestarSimple = (a, b) => console.log(a - b)
+functionRestarSimple(4, 2)
 
 function defaultSum(a = 0, b = 0) { //lo hacemos en caso de que no le asignen nada a la funcion, asi el resultado sera 0 y no NaN
     console.log(a + b)

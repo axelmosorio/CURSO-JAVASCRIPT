@@ -1,7 +1,7 @@
 //1. Crea un bucle que imprima los numeros del 1 al 20
 console.log('(1) ------------------------')
 
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 20; i++) { 
     console.log(`${i}`)
 }
 
