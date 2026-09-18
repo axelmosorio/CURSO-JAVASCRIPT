@@ -1,4 +1,4 @@
-// set
+// set, usarlos cuando no se vayan a repetir elementos, cuando no necesites indices, eliminar duplicados y hacer busquedas rapidas
 
 // Declaracion
 
