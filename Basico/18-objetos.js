@@ -62,7 +62,7 @@ let persona3 = {
     nombre: 'Tomas', 
     edad: 18, 
     alias: 'Tomi', 
-    walk: () => { //asi no va a funcionar el this.nombre por las arrow functions, debe escribir con el formato function nombre() {}
+    walk: function() { //asi va a funcionar el this.nombre por las arrow functions, debe escribir con el formato function nombre() {}
         console.log(`La persona ${this.nombre} camina`)
     },
     trabajo: { //objeto dentro de un objeto

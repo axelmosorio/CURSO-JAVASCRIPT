@@ -46,9 +46,7 @@ console.log(myMap.has(5))
 console.log(myMap.get(5))
 
 //9. Pon al mapa una clave mas con un array como que almacene los meses de verano
-let myArray1 = []
-myArray1 = ['Meses de verano', 'enero', 'febrero', 'marzo']
-myMap.set(myArray1)
+myMap.set('Meses de verano:', ['mayo', 'junio', 'julio'])
 
 console.log(myMap)
 
