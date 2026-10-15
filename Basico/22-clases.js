@@ -121,3 +121,57 @@ persona6.bank = 'new IR493274892Q6' //para cambiar el bank privado, no para acce
 
 // Herencia
 
+console.log('---------------------------')
+
+class Animal { //caracteristicas de la clase padre
+    constructor(nombre){
+        this.nombre = nombre
+    }
+
+    sound() { //funcion de la clase padre
+        console.log('Emite un sonido')
+    }
+}
+
+class Dog extends Animal{
+    run() {
+        console.log('El perro corre')
+    }
+
+    sound() { //redefinimos la funcion de la clase padre para darle una funcion nueva o adicional
+        console.log('Wuau')
+    }
+}
+
+class Fish extends Animal {
+    constructor(nombre, size) { // Propiedades
+        super(nombre) //llamamos al constructor del padre Animal
+        this.size = size //le agregamos una propiedad interna de Fish
+    }
+    // Metodos
+    swim() {
+        console.log('El pez nada')
+    }
+}
+
+let myDog = new Dog('Rick')
+myDog.run()
+myDog.sound()
+
+let myFish = new Fish('Nemo', 24)
+myFish.swim()
+myFish.sound()
+
+// Metodos estaticos
+
+class MathOperations {
+
+    static suma(a, b) {
+        return a + b
+    }
+}
+
+console.log(MathOperations.suma(5, 10))
+
+/*let myClass = new MathOperations()
+console.log(myClass.sum(5, 10))*/ //con metodos estaticos no hay que instanciar esto
